@@ -1,24 +1,3 @@
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.list {
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
-
-.link {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
-
 .page-header__container, .page-footer__container {
   width: 1200px;
   padding-left: 15px;
@@ -352,10 +331,50 @@ img {
   height: auto;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
 .page-header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
+}
+
+@media screen and (min-width: 480px) {
+  .page-header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .page-header__container {
@@ -367,34 +386,39 @@ img {
   color: #000000;
 }
 
-.page-header__mail {
-  margin-left: auto;
-  margin-right: 50px;
+@media screen and (min-width: 1200px) {
+  .page-header__mail {
+    margin-left: auto;
+    margin-right: 50px;
+  }
 }
 
-.page-header__mail,
-.page-header__contact {
-  color: #757575;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 1200px) {
+  .page-header__mail,
+  .page-header__contact {
+    color: #757575;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .page-header__mail:hover, .page-header__mail:focus, .page-header__mail:hover, .page-header__mail:focus,
+  .page-header__contact:hover,
+  .page-header__contact:focus,
+  .page-header__contact:hover,
+  .page-header__contact:focus {
+    color: #2196f3;
+  }
 }
 
-.page-header__mail:hover, .page-header__mail:focus, .page-header__mail:hover, .page-header__mail:focus,
-.page-header__contact:hover,
-.page-header__contact:focus,
-.page-header__contact:hover,
-.page-header__contact:focus {
-  color: #2196f3;
-}
-
-.page-header__icon {
-  margin-right: 10px;
-  align-items: center;
-  fill: currentColor;
+@media screen and (min-width: 1200px) {
+  .page-header__icon {
+    margin-right: 10px;
+    align-items: center;
+    fill: currentColor;
+  }
 }
 
 .logo__first {
@@ -414,34 +438,53 @@ img {
 }
 
 .page-nav {
-  margin-left: 93px;
+  display: none;
 }
 
-.page-nav__list {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .page-nav {
+    display: block;
+    margin-left: 88px;
+  }
 }
 
-.page-nav__item {
-  margin-right: 50px;
+@media screen and (min-width: 1200px) {
+  .page-nav {
+    margin-left: 93px;
+  }
 }
 
-.nav-list__item:last-child {
+@media screen and (min-width: 1200px) {
+  .page-nav__list {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-nav__item {
+    margin-right: 50px;
+  }
+}
+
+.page-nav__item .nav-list__item:last-child {
   margin-right: 0px;
 }
 
-.page-nav__link {
-  position: relative;
-  display: block;
-  color: #212121;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 1200px) {
+  .page-nav__link {
+    position: relative;
+    display: block;
+    color: #212121;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
-.page-nav__link-current::after {
+.page-nav__link .page-nav__link-current::after {
   position: absolute;
   bottom: -34px;
   left: 0;
@@ -453,8 +496,8 @@ img {
   border-radius: 2px;
 }
 
-.page-nav__link:hover,
-.page-nav__link:focus {
+.page-nav__link .page-nav__link:hover,
+.page-nav__link .page-nav__link:focus {
   color: #2196f3;
 }
 
