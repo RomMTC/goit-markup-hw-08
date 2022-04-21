@@ -1,0 +1,169 @@
+/* Footer */
+.page-footer {
+    background-color: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .page-footer__container {
+    @extend %container;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .logo__secondary-color {
+    @include logoColor(#ffffff);
+  }
+  .page-footer__address {
+    display: inline-block;
+    margin-top: 20px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #ffffff;
+  }
+  .page-footer_list {
+    @extend %list;
+  }
+  .page-footer__item {
+    margin-top: 9px;
+    margin-bottom: 9px;
+
+    &:last-child {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .page-footer__mail,
+  .page-footer__contact {
+    @extend %link;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color $primaryAnimation;
+    &:hover,
+    &:focus,
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
+  }
+
+  .page-footer__social {
+    margin-left: 70px;
+  }
+  .page-footer__appeal {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1, 14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+   margin-bottom: 20px;
+  }
+  .page-footer__social-link {
+    @extend %link;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;;
+      display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .page-footer__social-list {
+    @extend %list;
+    // margin-top: 20px;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .page-footer__social-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: #44454e;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  
+    transition: background-color $primaryAnimation;
+
+    &:hover,
+    &:focus {
+      background-color: $accentColor;
+    }
+  }
+  .page-footer__social-photo {
+    fill: #ffffff;
+  }
+  .page-footer__signup {
+  //   display: block;
+  margin-left: 93px;
+  }
+  .page-footer__signup {
+    // display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    }
+    .page-footer__signup-header {
+        margin-bottom: 20px;
+    }
+  .page-footer__signup-label {
+    position: relative;
+  }
+  .page-footer__signup-input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    outline: transparent;
+    background-color: transparent;
+    width: 356px;
+    padding: 14px 16px 14px 16px;
+    margin-right: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    &:focus,
+  &:not(:placeholder-shown) {
+    /* background-color: $accentColor; */
+    color: #fff;
+  }
+    &:focus + .footer-signup-email,
+    &:not(:placeholder-shown) + .footer-signup-email {
+      color: #fff;
+    }
+  }
+  .page-footer__btn {
+    position: relative;
+    text-align: left;
+    width: 200px;
+    letter-spacing: 0.06em;
+    padding: 10px 28px 10px 29px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: $accentColor;
+    color: #FFFFFF;
+    transition: background-color $primaryAnimation, box-shadow $primaryAnimation;
+    &:hover,
+    &:focus {
+      background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+  }
+  .page-footer__btn-send {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 2px;
+  }
+  

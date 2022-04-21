@@ -1,0 +1,184 @@
+/* Modal FORM */
+.modal-form {
+    padding: 40px;
+  }
+  .modal-form-text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+  .modal-form-list {
+    margin-top: 12px;
+  }
+  .modal-form-caption {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1.16;
+  margin-bottom: 4px;
+  color: #757575;
+  }
+  .modal-form-item {
+    position: relative;
+  }
+  .modal-form-label {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .modal-form-input {
+    display: inline-block;
+    width: 100%;
+    padding: 11px 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    outline: none;
+    transition: border-color $primaryAnimation, fill $primaryAnimation;
+    &:hover,
+    &:focus,
+    &:not(:placeholder-shown) {
+      border-color: $accentColor;
+      fill: $accentColor;
+    }
+    &:hover + .modal-form-icon,
+    &:focus + .modal-form-icon,
+    &:not(:placeholder-shown) + .modal-form-icon {
+      border-color: $accentColor;
+      fill: $accentColor;
+    }
+  }
+  /* .modal-form-icon:hover {
+    fill: var(--accent-color);
+  } */
+
+  // .modal-form-input:hover + .modal-form-icon,
+  // .modal-form-input:focus + .modal-form-icon,
+  // .modal-form-input:not(:placeholder-shown) + .modal-form-icon {
+  //   border-color: $accentColor;
+  //   fill: $accentColor;
+  // }
+  .modal-form-icon {
+    position: absolute;
+    left: 0;
+    margin-top: 11px;
+    margin-left: 12px;
+  }
+  .modal-form-message {
+    display: block;
+    width: 100%;
+    padding: 12px 16px 12px 16px;
+    margin-bottom: 20px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    &::placeholder {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.16;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+      }
+      &:hover,
+  &:focus,
+  &:not(:placeholder-shown) {
+    border-color: $accentColor;
+    fill: $accentColor;
+  }
+  }
+
+  
+  .modal-form-agreement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .modal-form-agreement-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 15px;
+    border: 1px solid #44454e;
+    border-radius: 2px;
+    background-size: contain;
+    background-origin: border-box;
+    text-align: center;
+    margin-right: 7px;
+    transition: background-color $primaryAnimation;
+    }
+    /* .modal-form-agreement-input {
+      border-style: none;
+      border: none;
+      border-color: transparent;
+      outline: none;
+      background-origin: border-box;
+    } */
+  /* .modal-form-agreement-input:active + .modal-form-agreement-check, */
+  /* .modal-form-agreement-input:focus + .modal-form-agreement-check {
+    border-color: #188ce8;
+  } */
+  /* .modal-form-agreement-check:focus-visible {
+  outline: none;
+  } */
+  /* .modal-form-agreement-check:focus-visible {
+    outline: none;
+    border: none;
+  } */
+  .modal-form-agreement-input:checked + .modal-form-agreement-check {
+    border-color: $accentColor;
+    background-color: #188ce8;
+    background-origin: border-box;
+  }
+  .modal-form-agreement-check-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+  .modal-form-agreement-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $accentColor;
+    text-decoration: underline;
+  }
+  .modal-form-btn {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 124px;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    background-color: #2196F3;
+    border: none;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color var(--anim), box-shadow var(--anim);
+    &:hover,
+  &:focus {
+    background-color: $secondary-accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+  }
+  

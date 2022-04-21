@@ -1,0 +1,40 @@
+/* Main Quality */
+.main-quality-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 270px;
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  .main-quality {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .main-quality-list {
+    display: flex;
+  }
+  .main-quality-item {
+    width: 270px;
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .main-quality-title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: left;
+    color: $secondaryTextColor;
+  }
+  .main-quality-descr {
+    text-align: left;
+  }

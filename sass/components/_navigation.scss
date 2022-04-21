@@ -1,0 +1,42 @@
+// navigation
+.page-nav {
+  margin-left: 93px;
+}
+.page-nav__list {
+@extend %list;
+display: flex;
+align-items: center;
+}
+.page-nav__item {
+    margin-right: 50px;
+}
+.nav-list__item:last-child {
+    margin-right: 0px;
+}
+.page-nav__link {
+@extend %link;
+position: relative;
+display: block;
+color: $secondaryTextColor;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+
+transition: color $primaryAnimation;
+}
+.page-nav__link-current::after {
+  position: absolute;
+  bottom: -34px;
+  left: 0;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: $accentColor;
+  border-radius: 2px;
+      }
+.page-nav__link:hover,
+.page-nav__link:focus {
+  color: $accentColor;
+}

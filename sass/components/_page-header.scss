@@ -1,0 +1,46 @@
+//   Header
+.page-header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ececec;
+    }
+    .page-header__container {
+        @extend %container;
+    display: flex;
+    align-items: center;
+    }
+    .logo__secondary {
+      @include logoColor(#000000);
+    }
+    .page-header__mail {
+        @extend %link;
+        margin-left: auto;
+        margin-right: 50px;
+      }
+      .page-header__contact {
+     @extend %link;
+      }
+      .page-header__mail,
+      .page-header__contact {
+        //   @extend .link;
+        color: $primaryTextColor;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+
+          transition: color $primaryAnimation;
+          &:hover,
+          &:focus,
+          &:hover,
+          &:focus {
+            color: $accentColor;
+          }
+      }
+
+      .page-header__icon {
+        margin-right: 10px;
+        align-items: center;
+        fill: currentColor;
+      }

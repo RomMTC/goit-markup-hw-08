@@ -1,0 +1,58 @@
+/* Our Cients */
+.our-clients-container {
+    padding: 94px 0 94px 0;
+  }
+  
+  .our-clients-header {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+  .our-clients-group {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  .our-clients-logo {
+    width: 170px;
+    height: 92px;
+    margin-right: 30px;
+    border: #afb1b8;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  .our-clients-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: border-color $primaryAnimation,
+    fill $primaryAnimation;
+    &:hover,
+    &:focus {
+      border-color: $accentColor;
+    }
+    &:hover .our-clients-photo,
+  &:focus .our-clients-photo {
+    fill: $accentColor;
+  }
+  }
+ 
+  // .our-clients-item:hover .our-clients-photo,
+  // .our-clients-item:focus .our-clients-photo {
+  //   fill: $accentColor;
+  // }
+  .our-clients-photo {
+    fill: #afb1b8;
+  }
