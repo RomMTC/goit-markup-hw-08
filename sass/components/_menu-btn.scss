@@ -1,0 +1,30 @@
+.menu-btn {
+display: flex;
+align-items: center;
+justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: transparent;
+        transition: fill var(--anim);
+        
+        &:hover,
+        &:focus {
+            fill: $accentColor;
+        }
+    &__icon {
+        width: 44px;
+        height: 44px;
+        &-open {
+            opacity: 1;
+        }
+        &-close {
+            opacity: 0;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+

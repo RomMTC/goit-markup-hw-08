@@ -1,31 +1,47 @@
 //   Header
 .page-header {
-      border-bottom: 1px solid #ececec;
-@media screen and (min-width: 480px) {
-padding-top: 16px;
-padding-bottom: 16px;
-}
+    border-bottom: 1px solid #ececec;
+    padding-top: 16px;
+    padding-bottom: 16px;
 
-@media screen and (min-width: 768px) {
-padding-top: 26px;
-padding-bottom: 26px;
-}
+
+    @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    }
 
   @media screen and (min-width: 1200px) {
     padding-top: 24px;
     padding-bottom: 25px;
-
   }
 }
 .page-header__container {
-  @extend %container;
-  display: flex;
-  align-items: center;
-  }
+    // @extend %container;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 480px) {
+      justify-content: space-between;
+    }
+}
+
 .logo__secondary {
 @include logoColor(#000000);
 }
 
+.page-header_contacts {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {}
+  display: flex;
+    // align-items: center;
+  
+  @media screen and (min-width: 1200px) {
+    
+    margin-left: auto;
+    margin-right: 50px;
+  }
+}
 .page-header__mail {
   @extend %link;
 
@@ -39,7 +55,6 @@ padding-bottom: 26px;
     margin-left: auto;
     margin-right: 50px;
       }
-
 }
 .page-header__contact {
   @extend %link;
