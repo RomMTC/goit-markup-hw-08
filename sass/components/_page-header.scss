@@ -1,46 +1,96 @@
 //   Header
 .page-header {
+      border-bottom: 1px solid #ececec;
+@media screen and (min-width: 480px) {
+padding-top: 16px;
+padding-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+padding-top: 26px;
+padding-bottom: 26px;
+}
+
+  @media screen and (min-width: 1200px) {
     padding-top: 24px;
     padding-bottom: 25px;
-    border-bottom: 1px solid #ececec;
-    }
-    .page-header__container {
-        @extend %container;
-    display: flex;
-    align-items: center;
-    }
-    .logo__secondary {
-      @include logoColor(#000000);
-    }
-    .page-header__mail {
-        @extend %link;
-        margin-left: auto;
-        margin-right: 50px;
+
+  }
+}
+.page-header__container {
+  @extend %container;
+  display: flex;
+  align-items: center;
+  }
+.logo__secondary {
+@include logoColor(#000000);
+}
+
+.page-header__mail {
+@media screen and (min-width: 480px) {
+display: none;
+}
+@media screen and (min-width: 768px) {
+
+}
+  @media screen and (min-width: 1200px) {
+    // @extend %link;
+    margin-left: auto;
+    margin-right: 50px;
       }
-      .page-header__contact {
-     @extend %link;
-      }
-      .page-header__mail,
-      .page-header__contact {
-        //   @extend .link;
+
+}
+.page-header__contact {
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+  
+  @media screen and (min-width: 768px) {}
+
+  @media screen and (min-width: 1200px) {
+    // @extend %link;
+  }
+
+}
+.page-header__mail,
+.page-header__contact {
+@media screen and (min-width: 480px) {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1200px) {
         color: $primaryTextColor;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 
-          transition: color $primaryAnimation;
-          &:hover,
-          &:focus,
-          &:hover,
-          &:focus {
-            color: $accentColor;
-          }
-      }
+    transition: color $primaryAnimation;
+    &:hover,
+    &:focus,
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
+    }
+  //   @extend .link;
 
-      .page-header__icon {
+}
+
+.page-header__icon {
+@media screen and (min-width: 480px) {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1200px) {
         margin-right: 10px;
-        align-items: center;
-        fill: currentColor;
-      }
+  align-items: center;
+  fill: currentColor;
+    }
+
+}
