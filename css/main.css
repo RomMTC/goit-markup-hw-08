@@ -334,8 +334,7 @@ img {
 .page-header {
   max-width: 480px;
   border-bottom: 1px solid #ececec;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding: 16px 10px 16px 15px;
 }
 
 @media screen and (min-width: 768px) {
