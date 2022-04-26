@@ -1,133 +1,117 @@
 //   Header
-.page-header {
-  position: relative;
-    max-width: 480px;
-    border-bottom: 1px solid #ececec;
-    padding: 16px 10px 16px 15px;
-    // padding-top: 16px;
-    // padding-bottom: 16px;
-         // @media screen and (max-width: 480px) {
-        //   width: 480px;
-        // }
-    @media screen and (min-width: 768px) {
-      width: 768px;
-    padding-top: 26px;
-    padding-bottom: 26px;
-    }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-    padding-top: 24px;
-    padding-bottom: 25px;
-  }
-  &__container {
+.page-header__container {
     display: flex;
     align-items: center;
-
-    @media screen and (max-width: 767px) {
-      justify-content: space-between;
+    border-bottom: 1px solid #ececec;
+  @extend %container;
+    @media screen and (min-width: 480px) {
+      width: 480px;
     }
-  }
+    
+    @media screen and (min-width: 768px) {
+      width: 768px;
+      padding-top: 26px;
+      padding-bottom: 26px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+      padding-top: 24px;
+      padding-bottom: 25px;
+    }
 }
-// .page-header__container {
-//     // @extend %container;
-//     // width: 100%;
-
-// }
 
 .logo__secondary {
 @include logoColor(#000000);
 }
 
 .page-header_contacts {
+    
+    // 
   @media screen and (max-width: 767px) {
     display: none;
   }
-  @media screen and (min-width: 768px) {}
+  @media screen and (min-width: 768px) {
   display: flex;
-    // align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 84px;
+  }
   
   @media screen and (min-width: 1200px) {
-    
-    margin-left: auto;
-    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 305px;
   }
 }
 .page-header__mail {
-  @extend %link;
-
-@media screen and (min-width: 480px) {
-
-}
-@media screen and (min-width: 768px) {
-
-}
-  @media screen and (min-width: 1200px) {
-    margin-left: auto;
-    margin-right: 50px;
-      }
-}
-.page-header__contact {
-  @extend %link;
-
-  @media screen and (min-width: 480px) {
-
-  }
-  
   @media screen and (min-width: 768px) {
-
+    margin-bottom: 10px;
   }
-
   @media screen and (min-width: 1200px) {
-
-    // @extend %link;
+    margin-bottom: 0;
+    margin-right: 30px;
   }
-
 }
 .page-header__mail,
 .page-header__contact {
- 
-  @media screen and (min-width: 480px) {
-
-  }
-
-  @media screen and (min-width: 768px) {
-
-  }
-
-    @media screen and (min-width: 1200px) {
-  color: $primaryTextColor;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $primaryTextColor;
+    @extend %link;
     transition: color $primaryAnimation;
-    &:hover,
-    &:focus,
-    &:hover,
-    &:focus {
-      color: $accentColor;
-    }
-    }
-  //   @extend .link;
-
-}
-
-.page-header__icon {
-
-@media screen and (min-width: 480px) {
-
-}
-
-@media screen and (min-width: 768px) {
-
-}
-
+  
+  &:hover,
+  &:focus,
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+//   @media screen and (min-width: 480px) {
+// display: none;
+//   }
     @media screen and (min-width: 1200px) {
-    
-  margin-right: 10px;
-  align-items: center;
-  fill: currentColor;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        // text-decoration: none;
+        color: $primaryTextColor;
     }
 }
+// .page-header__mail {
+// margin-right: 8px;
+// align-items: center;
+// fill: currentColor;
+// @media screen and (min-width: 1200px) {
+// margin-right: 10px;
+// }
+// }
+// .page-header__contact
+
+.page-header__icon-mail,
+.page-header__icon-phone {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+  align-items: center;
+  fill: currentColor; 
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-header__icon-phone {
+    width: 10px;
+    height: 16px;
+  }
+  .page-header__icon-mail {
+    width: 16px;
+    height: 12px;
+  }
+    }

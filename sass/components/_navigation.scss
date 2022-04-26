@@ -1,11 +1,12 @@
 // navigation
 .page-nav {
   display: none;
+
   @media screen and (min-width: 480px) {
 
   }
   @media screen and (min-width: 768px) {
-display: block;
+  display: block;
   margin-left: 88px;
   }
     @media screen and (min-width: 1200px) {
@@ -15,42 +16,35 @@ display: block;
 }
 .page-nav__list {
   @extend %list;
+  display: flex;
+  align-items: center;  
   @media screen and (min-width: 480px) {}
   
   @media screen and (min-width: 768px) {
- 
   }
   
   @media screen and (min-width: 1200px) {
-// @extend %list;
-display: flex;
-align-items: center;
   }
-  
-
 }
 .page-nav__item {
+    margin-right: 50px;
+    &:last-child {
+      margin-right: 0;
+    }
   @media screen and (min-width: 480px) {}
   
-  @media screen and (min-width: 768px) {}
-  
-  @media screen and (min-width: 1200px) {
-  margin-right: 50px;
-
+  @media screen and (min-width: 768px) {
+    // display: block;
   }
-  .nav-list__item:last-child {
-    margin-right: 0px;
+  
+  @media screen and (min-width: 1200px) {}
+    // .nav-list__item:last-child {
+  //   margin-right: 0px;
 }
 
-}
+
 .page-nav__link {
   @extend %link;
-  @media screen and (min-width: 480px) {}
-  
-  @media screen and (min-width: 768px) {}
-  
-  @media screen and (min-width: 1200px) {
-    // @extend %link;
 position: relative;
 display: block;
 color: $secondaryTextColor;
@@ -60,8 +54,15 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 
 transition: color $primaryAnimation;
+&:hover,
+&:focus {
+  color: $accentColor;
 }
-.page-nav__link-current::after {
+  @media screen and (min-width: 480px) {}
+    @media screen and (min-width: 768px) {}
+  @media screen and (min-width: 1200px) {
+}
+&-current::after {
   position: absolute;
   bottom: -34px;
   left: 0;
@@ -72,8 +73,4 @@ transition: color $primaryAnimation;
   background-color: $accentColor;
   border-radius: 2px;
       }
-.page-nav__link:hover,
-.page-nav__link:focus {
-  color: $accentColor;
-}
 }

@@ -45,32 +45,30 @@
         </nav>
         <div class="page-header_contacts">
           <a class="page-header__mail" href="mailto:info@devstudio.com">
-            <svg class="page-header__icon" width="16" height="12">
+            <svg class="page-header__icon-mail" width="14" height="10">
               <use href="./img/icon/icons.svg#envelope"></use>
             </svg>
             info@devstudio.com
           </a>
           <a class="page-header__contact" href="tel:+380961111111">
-            <svg class="page-header__icon" width="10" height="16">
+            <svg class="page-header__icon-phone" width="10" height="14">
               <use href="./img/icon/icons.svg#smartphone"></use></svg
             >+38 096 111 11 11
           </a>
         </div>
-        <div>
-          <button
-            class="menu-btn"
-            type="button"
-            aria-label="кнопка открытия меню"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-            data-menu-button
-          >
-            <svg class="menu-btn__icon" width="40" height="40">
-              <use class="menu-btn__icon-open" href="./img/icon/icons.svg#menu-btn-open"></use>
-              <use class="menu-btn__icon-close" href="./img/icon/icons.svg#menu-btn-close"></use>
-            </svg>
-          </button>
-        </div>
+        <button
+          class="menu-btn"
+          type="button"
+          aria-label="кнопка открытия меню"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-menu-button
+        >
+          <svg class="menu-btn__icon" width="40" height="40">
+            <use class="menu-btn__icon-open" href="./img/icon/icons.svg#menu-btn-open"></use>
+            <use class="menu-btn__icon-close" href="./img/icon/icons.svg#menu-btn-close"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- Main Content -->
@@ -616,30 +614,28 @@
       </div>
     </div> -->
     <!-- Mobile Menu -->
-    <div class="mobile-overlay" id="mobile-menu" data-menu>
-      <div class="mobile-menu">
-        <nav class="mobile-menu__nav">
-          <ul class="mobile-menu__nav-list list">
-            <li class="mobile-menu__nav-item">
-              <a class="mobile-menu__nav-link link" href="./index.html">Студия</a>
-            </li>
-            <li class="mobile-menu__nav-item">
-              <a class="mobile-menu__nav-link link" href="./portfolio.html"> Портфолио</a>
-            </li>
-            <li class="mobile-menu__nav-item">
-              <a class="mobile-menu__nav-link link" href="">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-
-        <div class="mobile-menu__contacs">
-          <a class="mobile-menu__contacs-phone" href="" target="_blank" rel="noopener noreferrer"
-            >+38 096 111 11 11
-          </a>
-          <a class="mobile-menu__contacs-mail" href="" target="_blank" rel="noopener noreferrer"
-            >info@devstudio.com
-          </a>
-        </div>
+    <!-- <div class="mobile-overlay" id="mobile-menu" data-menu> -->
+    <div class="mobile-menu" id="mobile-menu" data-menu>
+      <nav class="mobile-menu__nav">
+        <ul class="mobile-menu__nav-list list">
+          <li class="mobile-menu__nav-item">
+            <a class="mobile-menu__nav-link link" href="./index.html">Студия</a>
+          </li>
+          <li class="mobile-menu__nav-item">
+            <a class="mobile-menu__nav-link link" href="./portfolio.html"> Портфолио</a>
+          </li>
+          <li class="mobile-menu__nav-item">
+            <a class="mobile-menu__nav-link link" href="">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-menu__contacs">
+        <a class="mobile-menu__contacs-phone" href="" target="_blank" rel="noopener noreferrer"
+          >+38 096 111 11 11
+        </a>
+        <a class="mobile-menu__contacs-mail" href="" target="_blank" rel="noopener noreferrer"
+          >info@devstudio.com
+        </a>
         <ul class="mobile-menu__social list">
           <li class="mobile-menu__social-item">
             <a class="mobile-menu__social-link link" href="">Instagram</a>
@@ -656,6 +652,7 @@
         </ul>
       </div>
     </div>
+    <!-- </div> -->
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
 
