@@ -3,22 +3,7 @@
     display: flex;
     align-items: center;
     border-bottom: 1px solid #ececec;
-  @extend %container;
-    @media screen and (min-width: 480px) {
-      width: 480px;
-    }
-    
-    @media screen and (min-width: 768px) {
-      width: 768px;
-      padding-top: 26px;
-      padding-bottom: 26px;
-    }
-    
-    @media screen and (min-width: 1200px) {
-      width: 1200px;
-      padding-top: 24px;
-      padding-bottom: 25px;
-    }
+    @extend %container;
 }
 
 .logo__secondary {
@@ -72,9 +57,7 @@
   &:focus {
     color: $accentColor;
   }
-//   @media screen and (min-width: 480px) {
-// display: none;
-//   }
+
     @media screen and (min-width: 1200px) {
         font-weight: 500;
         font-size: 14px;
@@ -84,15 +67,6 @@
         color: $primaryTextColor;
     }
 }
-// .page-header__mail {
-// margin-right: 8px;
-// align-items: center;
-// fill: currentColor;
-// @media screen and (min-width: 1200px) {
-// margin-right: 10px;
-// }
-// }
-// .page-header__contact
 
 .page-header__icon-mail,
 .page-header__icon-phone {

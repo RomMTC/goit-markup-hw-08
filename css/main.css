@@ -1,6 +1,29 @@
 .page-header__container, .page-footer__container {
   width: 100%;
+  margin: 0 auto;
   padding: 16px 15px 16px 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .page-header__container, .page-footer__container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-header__container, .page-footer__container {
+    width: 768px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header__container, .page-footer__container {
+    width: 1200px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .mobile-menu__nav-list, .mobile-menu__social, .page-nav__list, .page-footer_list, .page-footer__social-list {
@@ -333,28 +356,6 @@ img {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ececec;
-}
-
-@media screen and (min-width: 480px) {
-  .page-header__container {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .page-header__container {
-    width: 768px;
-    padding-top: 26px;
-    padding-bottom: 26px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .page-header__container {
-    width: 1200px;
-    padding-top: 24px;
-    padding-bottom: 25px;
-  }
 }
 
 .logo__secondary {
@@ -930,27 +931,43 @@ img {
 
 /* Main Hero */
 .main-hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
   align-items: center;
   text-align: center;
-  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/icon/icons.svg#imgoverlay), url(../img/top-bg-img.jpg);
-  background-position: center;
+  background-color: darkgray;
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 118px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-hero {
+    padding: 200px 0;
+  }
 }
 
 .hero-title {
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 30px;
-  color: #ffffff;
+  margin: 0 0 30px 0;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 22px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+@media screen and (min-width: 360px) {
+  .hero-title {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero-btn {
@@ -959,7 +976,7 @@ img {
   color: #ffffff;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.88;
   letter-spacing: 0.06em;
   border: none;
   border-radius: 4px;
