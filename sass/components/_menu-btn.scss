@@ -1,21 +1,29 @@
 .menu-btn {
-display: flex;
-align-items: center;
-justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
     background-color: transparent;
     border: none;
     outline: transparent;
-        transition: fill var(--anim);
-        
-        &:hover,
-        &:focus {
-            fill: $accentColor;
-        }
+    
+    transition: fill $primaryAnimation;
+    &:hover,
+    &:focus {
+        fill: $accentColor;
+    }
+    &.is-active .menu-btn__icon-open {
+        opacity: 0;
+    }
+    
+    &.is-active .menu-btn__icon-close {
+        opacity: 1;
+    }
     &__icon {
         width: 44px;
         height: 44px;
+        z-index: 99;
         &-open {
             opacity: 1;
         }
@@ -23,7 +31,7 @@ justify-content: center;
             opacity: 0;
         }
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 767px) {
         display: none;
     }
 }
