@@ -1,23 +1,23 @@
-.page-header__container, .main-hero-container, .main-quality-container, .page-footer__container {
+.page-header__container, .main-hero-container, .main-quality-container, .main-work .main-work-container, .page-footer__container {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
 
 @media screen and (min-width: 480px) {
-  .page-header__container, .main-hero-container, .main-quality-container, .page-footer__container {
+  .page-header__container, .main-hero-container, .main-quality-container, .main-work .main-work-container, .page-footer__container {
     width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .page-header__container, .main-hero-container, .main-quality-container, .page-footer__container {
+  .page-header__container, .main-hero-container, .main-quality-container, .main-work .main-work-container, .page-footer__container {
     width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .page-header__container, .main-hero-container, .main-quality-container, .page-footer__container {
+  .page-header__container, .main-hero-container, .main-quality-container, .main-work .main-work-container, .page-footer__container {
     width: 1200px;
   }
 }
@@ -1081,7 +1081,14 @@ img {
 
 /* Main Work */
 .main-work {
-  padding-bottom: 94px;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-work {
+    display: block;
+    padding-bottom: 94px;
+  }
 }
 
 .main-work-title {

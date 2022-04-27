@@ -1,6 +1,13 @@
 /* Main Work */
 .main-work {
-    padding-bottom: 94px;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+        padding-bottom: 94px;
+  }
+.main-work-container {
+  @extend %container;
+}
   }
   .main-work-title {
     margin-bottom: 50px;
