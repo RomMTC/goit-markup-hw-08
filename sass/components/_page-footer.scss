@@ -7,26 +7,31 @@
   .page-footer__container {
     @extend %container;
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
   }
   .logo__secondary-color {
     @include logoColor(#ffffff);
   }
   .page-footer__address {
-    display: inline-block;
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     color: #ffffff;
+    margin-top: 20px;
   }
   .page-footer_list {
     @extend %list;
+    margin-bottom: 60px;
   }
   .page-footer__item {
-    margin-top: 9px;
-    margin-bottom: 9px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 
     &:last-child {
       margin-top: 0;
@@ -46,9 +51,8 @@
       color: $accentColor;
     }
   }
-
   .page-footer__social {
-    margin-left: 70px;
+    // margin-left: 70px;
   }
   .page-footer__appeal {
     font-weight: 700;
@@ -63,9 +67,10 @@
     @extend %link;
     padding: 0 0 0 0;
     margin: 0 0 0 0;;
-      display: flex;
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-bottom: 60px;
   }
   .page-footer__social-list {
     @extend %list;
@@ -75,7 +80,6 @@
       margin-right: 0;
     }
   }
-
   .page-footer__social-item {
     display: flex;
     flex-wrap: wrap;
@@ -98,21 +102,30 @@
   .page-footer__social-photo {
     fill: #ffffff;
   }
+    < !-- Sign UP ! -->
   .page-footer__signup {
   //   display: block;
-  margin-left: 93px;
+//  margin-left: 93px;
   }
   .page-footer__signup {
+    display: flex;
     // display: block;
+    // font-weight: 700;
+    // font-size: 14px;
+    // line-height: 1.14;
+    // letter-spacing: 0.03em;
+    // text-transform: uppercase;
+    // color: #FFFFFF;
+    }
+    .page-footer__signup-header {
+    // margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 16px;
+    text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
-    }
-    .page-footer__signup-header {
-        margin-bottom: 20px;
     }
   .page-footer__signup-label {
     position: relative;
