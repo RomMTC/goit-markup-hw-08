@@ -1032,18 +1032,23 @@ img {
   margin-bottom: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .main-quality-item {
     width: 354px;
+    margin-bottom: 0;
   }
   .main-quality-item:nth-child(odd) {
     margin-right: 30px;
+  }
+  .main-quality-item:nth-child(-n+2) {
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .main-quality-item {
     width: 270px;
+    margin-bottom: 0;
     margin-right: 30px;
   }
   .main-quality-item:last-child {
@@ -1184,35 +1189,30 @@ img {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin-bottom: 30px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .main-team-item {
-    margin-bottom: 30px;
-  }
-  .main-team-item:last-child {
-    margin-bottom: 0;
-  }
+.main-team-item:last-child {
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .main-team-item {
     width: 354px;
+    margin-bottom: 0;
   }
   .main-team-item:nth-child(odd) {
     margin-right: 30px;
   }
-  .main-team-item:nth-last-child(2) {
-    margin-top: 30px;
-  }
-  .main-team-item:nth-last-child(1) {
-    margin-top: 30px;
+  .main-team-item:nth-child(-n+2) {
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .main-team-item {
     width: 270px;
+    margin-bottom: 0;
     margin-right: 30px;
   }
   .main-team-item:last-child {
