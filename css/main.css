@@ -1176,6 +1176,7 @@ img {
 .main-team-list {
   display: flex;
   flex-direction: column;
+  margin: -15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1189,34 +1190,18 @@ img {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 30px;
-}
-
-.main-team-item:last-child {
-  margin-bottom: 0;
+  margin: 15px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .main-team-item {
-    width: 354px;
-    margin-bottom: 0;
-  }
-  .main-team-item:nth-child(odd) {
-    margin-right: 30px;
-  }
-  .main-team-item:nth-child(-n+2) {
-    margin-bottom: 30px;
+    width: calc((100% - 4 * 15px) / 2);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .main-team-item {
-    width: 270px;
-    margin-bottom: 0;
-    margin-right: 30px;
-  }
-  .main-team-item:last-child {
-    margin-right: 0;
+    width: calc((100% / 4 - 2 * 15px));
   }
 }
 
