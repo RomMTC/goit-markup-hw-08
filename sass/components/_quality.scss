@@ -17,13 +17,13 @@
   }
   .main-quality-list {
       @extend %list;
-  //  display: flex;
-  text-align: center;
+      display: flex;
+      flex-direction: column;
 
     @media screen and (min-width: 480px) {}
   
     @media screen and (min-width: 768px) {
-      display: flex;
+      flex-direction: row;
       flex-wrap: wrap;
     }
   
@@ -35,7 +35,9 @@
     &:last-child {
       margin-bottom: 0;
     }
-    @media screen and (min-width: 480px) {}
+    @media screen and (min-width: 480px) {
+
+    }
     
     @media screen and (min-width: 768px) {
         width: 354px;
@@ -43,6 +45,13 @@
       &:nth-child(odd) {
         margin-right: 30px;
                 }
+        // &:nth-last-child(2) {
+        //   margin-top: 30px;
+        // }
+        
+        // &:nth-last-child(1) {
+        //   margin-top: 30px;
+        // }
     }
 
     @media screen and (min-width: 1200px) {
