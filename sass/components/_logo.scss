@@ -1,10 +1,10 @@
 .logo__first {
-  @extend %link;
     color: #2196f3;
     font-family: $secondaryFont;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+    text-decoration: none;
   }
   .logo__secondary {
     @include logoColor(#000000);

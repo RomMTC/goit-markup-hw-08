@@ -30,10 +30,8 @@
 }
 
 .page-header__mail,
-.page-header__contact, .logo__first, .mobile-menu__nav-link, .mobile-menu__contacs-phone, .mobile-menu__contacs-mail, .mobile-menu__social-link, .page-nav__link, .social-item-link, .our-clients-link, .page-footer__mail,
+.page-header__contact, .mobile-menu__nav-link, .mobile-menu__contacs-phone, .mobile-menu__contacs-mail, .mobile-menu__social-link, .page-nav__link, .social-item-link, .our-clients-link, .page-footer__mail,
 .page-footer__contact, .page-footer__social-link {
-  display: flex;
-  align-items: center;
   text-decoration: none;
 }
 
@@ -476,6 +474,7 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  text-decoration: none;
 }
 
 .logo__secondary {
@@ -1354,11 +1353,16 @@ img {
   padding-bottom: 60px;
 }
 
-.page-footer__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.page-footer__container .page-footer__container-address {
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
 }
 
 .logo__secondary-color {
@@ -1366,9 +1370,6 @@ img {
 }
 
 .page-footer__address {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -1404,6 +1405,10 @@ img {
   color: #2196f3;
 }
 
+.page-footer__social {
+  text-align: center;
+}
+
 .page-footer__appeal {
   font-weight: 700;
   font-size: 14px;
@@ -1418,8 +1423,7 @@ img {
   padding: 0 0 0 0;
   margin: 0 0 0 0;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  justify-content: center;
   margin-bottom: 60px;
 }
 
@@ -1453,25 +1457,27 @@ img {
   fill: #ffffff;
 }
 
-.page-footer__signup {
-  margin-left: 93px;
-}
-
-.page-footer__signup {
+.page-footer__signup-header {
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 16px;
+  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
 }
 
-.page-footer__signup-header {
-  margin-bottom: 20px;
+.page-footer__form-wrapper {
+  text-align: center;
 }
 
-.page-footer__signup-label {
-  position: relative;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-footer__form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .page-footer__signup-input {
@@ -1479,14 +1485,14 @@ img {
   border-radius: 4px;
   outline: transparent;
   background-color: transparent;
-  width: 356px;
-  padding: 14px 16px 14px 16px;
-  margin-right: 12px;
+  width: 100%;
+  padding: 14px 15px 14px 15px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 20px;
 }
 
 .page-footer__signup-input:focus, .page-footer__signup-input:not(:placeholder-shown) {
@@ -1497,6 +1503,13 @@ img {
 .page-footer__signup-input:focus + .footer-signup-email,
 .page-footer__signup-input:not(:placeholder-shown) + .footer-signup-email {
   color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer__signup-input {
+    width: 450px;
+    display: block;
+  }
 }
 
 .page-footer__btn {
