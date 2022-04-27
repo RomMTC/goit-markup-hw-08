@@ -105,7 +105,6 @@
     < !-- Sign UP ! -->
   .page-footer__signup {
   //   display: block;
-//  margin-left: 93px;
   }
   .page-footer__signup {
     display: flex;
@@ -129,15 +128,17 @@
     }
   .page-footer__signup-label {
     position: relative;
+    @media screen and (min-width: 320px) {
+    }
   }
   .page-footer__signup-input {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     outline: transparent;
     background-color: transparent;
-    width: 356px;
+    // width: 356px;
     padding: 14px 16px 14px 16px;
-    margin-right: 12px;
+    // margin-right: 12px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
@@ -152,6 +153,12 @@
     &:not(:placeholder-shown) + .footer-signup-email {
       color: #fff;
     }
+    @media screen and (min-width: 320px) {
+      width: 100vw;
+      margin: 15px;
+    }
+    @media screen and (min-width: 768px) {}
+    @media screen and (min-width: 1200px) {}
   }
   .page-footer__btn {
     position: relative;
