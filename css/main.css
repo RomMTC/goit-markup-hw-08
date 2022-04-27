@@ -1353,8 +1353,21 @@ img {
   padding-bottom: 60px;
 }
 
-.page-footer__container .page-footer__container-address {
+@media screen and (min-width: 1200px) {
+  .page-footer__container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.page-footer__container-address {
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer__container-address {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1379,6 +1392,12 @@ img {
 
 .page-footer_list {
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer_list {
+    margin-bottom: 0;
+  }
 }
 
 .page-footer__item {
@@ -1409,6 +1428,14 @@ img {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .page-footer__social {
+    text-align: left;
+    margin-right: 70px;
+    margin-left: 93px;
+  }
+}
+
 .page-footer__appeal {
   font-weight: 700;
   font-size: 14px;
@@ -1425,6 +1452,12 @@ img {
   display: flex;
   justify-content: center;
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer__social-link {
+    margin-bottom: 0;
+  }
 }
 
 .page-footer__social-list {
@@ -1496,7 +1529,6 @@ img {
 }
 
 .page-footer__signup-input:focus, .page-footer__signup-input:not(:placeholder-shown) {
-  /* background-color: $accentColor; */
   color: #fff;
 }
 
@@ -1505,10 +1537,19 @@ img {
   color: #fff;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-footer__signup-input {
-    width: 450px;
     display: block;
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer__signup-input {
+    display: inline;
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 

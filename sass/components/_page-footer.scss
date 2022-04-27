@@ -10,23 +10,25 @@
   .page-footer__container {
     @extend %container;
   
-.page-footer__container-address {
-
-  text-align: center;
-  
-  
-  
-  @media screen and (min-width: 1200px) {}
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
+.page-footer__container-address {
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
   }
   .page-footer__wrapper {
-@media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
   display: flex;
   justify-content: space-around;
   align-items: baseline;
-}
   }
-  .logo__secondary-color {
+}
+.logo__secondary-color {
     @include logoColor(#ffffff);
   }
   .page-footer__address {
@@ -42,6 +44,9 @@
   .page-footer_list {
     @extend %list;
     margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
   }
   .page-footer__item {
     margin-top: 8px;
@@ -67,6 +72,12 @@
   }
   .page-footer__social {
     text-align: center;
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+      margin-right: 70px;
+      margin-left: 93px;
+    }
+
   }
   .page-footer__appeal {
     font-weight: 700;
@@ -84,6 +95,9 @@
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
   }
   .page-footer__social-list {
     @extend %list;
@@ -115,13 +129,13 @@
     fill: #ffffff;
   }
 
-   .page-footer__signup {
-    // display: inline-flex;
-    //     flex-direction: column;
-    //     align-items: center;
-    // flex-basis: max-content;
-    // display: block;
-    }
+  //  .page-footer__signup {
+
+  //   //     flex-direction: column;
+  //   //     align-items: center;
+  //   // flex-basis: max-content;
+  //   // display: block;
+  //   }
     .page-footer__signup-header {
     margin-bottom: 20px;
     // margin: 0 -15px 20px -15px;
@@ -140,13 +154,12 @@
       flex-direction: column;
       align-items: center;
       }
+
     }
-  .page-footer__signup-label {
-    // position: relative;
-    // display: block;
-    @media screen and (min-width: 320px) {
-    }
-  }
+  // .page-footer__signup-label {
+  //   // position: relative;
+  //   // display: block;
+  // }
   .page-footer__signup-input {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -163,29 +176,25 @@
     margin-bottom: 20px;
     &:focus,
   &:not(:placeholder-shown) {
-    /* background-color: $accentColor; */
     color: #fff;
   }
     &:focus + .footer-signup-email,
     &:not(:placeholder-shown) + .footer-signup-email {
       color: #fff;
     }
-    @media screen and (min-width: 320px) {
-
-      // margin: 15px;
-    }
-    @media screen and (min-width: 768px) {
-      // display: flex;
-      // justify-content: center;
-      width: 450px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       display: block;
+      width: 450px;
     }
-    @media screen and (min-width: 1200px) {}
+    @media screen and (min-width: 1200px) {
+      display: inline;
+      width: 358px;
+      margin-right: 12px;
+      margin-bottom: 0;
+    }
   }
   .page-footer__btn {
     position: relative;
-    // display: inline-block;
-    // display: block;
     text-align: left;
     width: 200px;
     letter-spacing: 0.06em;
@@ -210,4 +219,3 @@
     margin-left: 10px;
     margin-top: 2px;
   }
-  
