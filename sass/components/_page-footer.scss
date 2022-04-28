@@ -146,6 +146,9 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
+    @media screen and (min-width: 1200px) {
+    text-align: left;
+    }
     }
     .page-footer__form-wrapper {
       text-align: center;
