@@ -22,7 +22,7 @@
   }
 }
 
-.mobile-menu__nav-list, .mobile-menu__social, .page-nav__list, .modal-form-list, .main-quality-list, .main-team-list, .social-list, .our-clients-list, .page-footer_list, .page-footer__social-list, .portfolio-list, .portfolio-projects-list {
+.mobile-menu__nav-list, .mobile-menu__social, .page-nav__list, .modal-form-list, .main-quality-list, .main-work-list, .main-team-list, .social-list, .our-clients-list, .page-footer_list, .page-footer__social-list, .portfolio-list, .portfolio-projects-list {
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;

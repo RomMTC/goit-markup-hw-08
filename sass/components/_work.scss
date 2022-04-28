@@ -18,6 +18,7 @@
     color: $secondaryTextColor;
   }
   .main-work-list {
+    @extend %list;
     display: flex;
   }
   .main-work-item {
