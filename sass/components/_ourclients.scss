@@ -1,9 +1,11 @@
 /* Our Cients */
 .our-clients-container {
   @extend %container;
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
   @media screen and (min-width: 1200px) {
-  padding: 94px 0 94px 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
     }
   }
   .our-clients-header {

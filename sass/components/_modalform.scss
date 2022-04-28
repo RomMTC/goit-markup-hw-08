@@ -9,6 +9,9 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    // @media screen and (min-width: 1200px) {
+    //   text-align: left;
+    // }
   }
   .modal-form-list {
     @extend %list;
@@ -144,18 +147,26 @@
   }
   .modal-form-agreement-check-text {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: #757575;
+    @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+    }
   }
   .modal-form-agreement-link {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: $accentColor;
     text-decoration: underline;
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
   .modal-form-btn {
     display: block;
