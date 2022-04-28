@@ -12,6 +12,7 @@
     pointer-events: initial;
     transition: opacity 250ms ease-in, visibility 500ms ease-in-out;
     overflow-y: scroll;
+    z-index: 100;
   }
   .modal-wrapper {
     position: absolute;

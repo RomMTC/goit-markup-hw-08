@@ -631,7 +631,7 @@ img {
 .menu-btn__icon {
   width: 44px;
   height: 44px;
-  z-index: 99;
+  z-index: 10;
 }
 
 .menu-btn__icon-open {
@@ -719,6 +719,7 @@ img {
   pointer-events: initial;
   transition: opacity 250ms ease-in, visibility 500ms ease-in-out;
   overflow-y: scroll;
+  z-index: 100;
 }
 
 .modal-wrapper {
