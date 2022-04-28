@@ -134,6 +134,9 @@
     background-color: rgba(33, 150, 243, 0.9);
     transform: translateY(100%);
     transition: transform $primaryAnimation;
+    @media screen  and (min-width: 310px) and (max-width: 380px) {
+      font-size:16px;
+    }
   }
   .portfolio-projects-item:hover .portfolio-wrapper-item {
     transform: translateY(0);

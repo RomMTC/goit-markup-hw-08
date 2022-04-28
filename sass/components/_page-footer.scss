@@ -14,14 +14,17 @@
 }
 .page-footer__container-address {
   text-align: center;
+  @media screen and (min-width: 768px) {
+    margin-left: 76px;
+  }
   @media screen and (min-width: 1200px) {
+    margin-left: 0;
     text-align: left;
   }
   }
   .page-footer__wrapper {
   @media screen and (min-width: 768px) {
   display: flex;
-  justify-content: space-around;
   align-items: baseline;
   }
 }
@@ -64,6 +67,9 @@
   }
   .page-footer__social {
     text-align: center;
+    @media screen and (min-width: 768px) {
+      margin-left: 165px;
+    }
     @media screen and (min-width: 1200px) {
       text-align: left;
       margin-right: 70px;
