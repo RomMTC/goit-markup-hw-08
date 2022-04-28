@@ -961,7 +961,6 @@ img {
 .main-hero {
   align-items: center;
   text-align: center;
-  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/icon/icons.svg#imgoverlay), url(../img/top-bg-img.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -973,6 +972,7 @@ img {
   .main-hero {
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/hero-img-sm.jpg);
   }
 }
 
