@@ -1,10 +1,6 @@
 // navigation
 .page-nav {
   display: none;
-
-  @media screen and (min-width: 480px) {
-
-  }
   @media screen and (min-width: 768px) {
   display: block;
   margin-left: 88px;
@@ -18,31 +14,13 @@
   @extend %list;
   display: flex;
   align-items: center;  
-  @media screen and (min-width: 480px) {}
-  
-  @media screen and (min-width: 768px) {
-  }
-  
-  @media screen and (min-width: 1200px) {
-  }
 }
 .page-nav__item {
     margin-right: 50px;
     &:last-child {
       margin-right: 0;
     }
-  @media screen and (min-width: 480px) {}
-  
-  @media screen and (min-width: 768px) {
-    // display: block;
-  }
-  
-  @media screen and (min-width: 1200px) {}
-    // .nav-list__item:last-child {
-  //   margin-right: 0px;
 }
-
-
 .page-nav__link {
   @extend %link;
     position: relative;
@@ -52,7 +30,6 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
     transition: color $primaryAnimation;
     &:hover,
     &:focus {

@@ -721,7 +721,6 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  /* height: 581px; */
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -827,9 +826,6 @@ img {
   fill: #2196f3;
 }
 
-/* .modal-form-icon:hover {
-    fill: var(--accent-color);
-  } */
 .modal-form-icon {
   position: absolute;
   left: 0;
@@ -888,24 +884,6 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .modal-form-agreement-input {
-      border-style: none;
-      border: none;
-      border-color: transparent;
-      outline: none;
-      background-origin: border-box;
-    } */
-/* .modal-form-agreement-input:active + .modal-form-agreement-check, */
-/* .modal-form-agreement-input:focus + .modal-form-agreement-check {
-    border-color: #188ce8;
-  } */
-/* .modal-form-agreement-check:focus-visible {
-  outline: none;
-  } */
-/* .modal-form-agreement-check:focus-visible {
-    outline: none;
-    border: none;
-  } */
 .modal-form-agreement-input:checked + .modal-form-agreement-check {
   border-color: #2196f3;
   background-color: #188ce8;
@@ -973,7 +951,8 @@ img {
 .main-hero {
   align-items: center;
   text-align: center;
-  background-color: rgba(47, 48, 58, 0.4);
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/icon/icons.svg#imgoverlay), url(../img/top-bg-img.jpg);
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 118px;

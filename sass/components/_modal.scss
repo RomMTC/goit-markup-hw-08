@@ -6,12 +6,10 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-  
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
     visibility: visible;
     pointer-events: initial;
-  
     transition: opacity 250ms ease-in, visibility 500ms ease-in-out;
   }
   .modal-wrapper {
@@ -20,8 +18,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    // width: 528px;
-    /* height: 581px; */
     background-color: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -29,10 +25,6 @@
     border-radius: 4px;
     @media screen and (min-width: 480px) {
       width: 450px;
-    }
-    
-    @media screen and (min-width: 768px) {
-
     }
     @media screen and (min-width: 1200px) {
       width: 528px;
@@ -58,7 +50,6 @@
       fill: $accentColor;
     }
   }
-
   .backdrop.is-hidden {
     opacity: 0;
     visibility: hidden;

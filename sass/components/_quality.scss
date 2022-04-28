@@ -1,13 +1,6 @@
 /* Main Quality */
-// @media screen and (min-width: 480px) {}
-// @media screen and (min-width: 768px) {}
-// @media screen and (min-width: 1200px) {}
   .main-quality {
     padding: 60px 15px;
-    @media screen and (min-width: 480px) {}
-  
-    @media screen and (min-width: 768px) {}
-  
     @media screen and (min-width: 1200px) {
       padding: 94px 15px;
     }
@@ -21,76 +14,37 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     @media screen and (min-width: 320px) {}
       margin: -15px;
     @media screen and (min-width: 768px) {
       flex-direction: row;
       flex-wrap: wrap;
     }
-  
     @media screen and (min-width: 1200px) {}
   }
-  
   .main-quality-item {
-    // margin-bottom: 30px;
-
-    // &:last-child {
-    //   margin-bottom: 0;
-    // }
     @media screen and (min-width: 320px) {
     margin: 15px;
     }
     
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       width: calc((100% / 2 - 4 * 15px));
-      //   width: 354px;
-      //   margin-bottom: 0;
-      // &:nth-child(odd) {
-      //   margin-right: 30px;
-      //   }
-      //   &:nth-child(-n+2) {
-      //     margin-bottom: 30px;
-      //   }
     }
 
     @media screen and (min-width: 1200px) {
       width: calc((100% / 4 - 2 * 15px));
-      // width: 270px;
-      // margin-bottom: 0;
-      // margin-right: 30px;
-      // &:last-child {
-      //   margin-right: 0;
-      // }
     }
 }
 .main-quality-card {
-      // display: flex;
-      // justify-content: center;
       align-items: center;
       text-align: center;
       padding: 25px 0;
-      // 
-      // height: 120px;
       background: #f5f4fa;
       border-radius: 4px;
       margin-bottom: 30px;
-  @media screen and (min-width: 480px) {
-
-  }
-  @media screen and (min-width: 768px) {
-
-      // display: flex;
-      // justify-content: center;
-  }
-  @media screen and (min-width: 1200px) {
-
-  }
-
   }
 
   .main-quality-title {
-
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -99,17 +53,6 @@
     text-align: center;
     color: $secondaryTextColor;
      margin-bottom: 10px;
-    @media screen and (min-width: 480px) {
-
-    }
-    @media screen and (min-width: 768px) {
-
-    }
-    @media screen and (min-width: 1200px) {
-
-    }
-   
-
   }
   .main-quality-descr {
     font-weight: 400;
@@ -118,14 +61,4 @@
     letter-spacing: 0.03em;
     text-align: left;
     color: $primaryTextColor;
-    @media screen and (min-width: 480px) {
-
-    }
-    @media screen and (min-width: 768px) {
-
-    }
-    @media screen and (min-width: 1200px) {
-
-    }
-    
   }

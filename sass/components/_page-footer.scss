@@ -1,7 +1,4 @@
 /* Footer */
-// @media screen and (min-width: 480px) {}
-// @media screen and (min-width: 768px) {}
-// @media screen and (min-width: 1200px) {}
 .page-footer {
     background-color: #2f303a;
     padding-top: 60px;
@@ -32,9 +29,6 @@
     @include logoColor(#ffffff);
   }
   .page-footer__address {
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -51,13 +45,11 @@
   .page-footer__item {
     margin-top: 8px;
     margin-bottom: 8px;
-
     &:last-child {
       margin-top: 0;
       margin-bottom: 0;
     }
   }
-
   .page-footer__mail,
   .page-footer__contact {
     @extend %link;
@@ -86,7 +78,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #ffffff;
-   margin-bottom: 20px;
+    margin-bottom: 20px;
   }
   .page-footer__social-link {
     @extend %link;
@@ -96,7 +88,7 @@
     justify-content: center;
     margin-bottom: 60px;
     @media screen and (min-width: 768px) {
-      margin-bottom: 0;
+    margin-bottom: 0;
     }
   }
   .page-footer__social-list {
@@ -117,9 +109,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50%;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  
     transition: background-color $primaryAnimation;
-
     &:hover,
     &:focus {
       background-color: $accentColor;
@@ -128,17 +118,8 @@
   .page-footer__social-photo {
     fill: #ffffff;
   }
-
-  //  .page-footer__signup {
-
-  //   //     flex-direction: column;
-  //   //     align-items: center;
-  //   // flex-basis: max-content;
-  //   // display: block;
-  //   }
     .page-footer__signup-header {
     margin-bottom: 20px;
-    // margin: 0 -15px 20px -15px;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -157,12 +138,7 @@
       flex-direction: column;
       align-items: center;
       }
-
     }
-  // .page-footer__signup-label {
-  //   // position: relative;
-  //   // display: block;
-  // }
   .page-footer__signup-input {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -170,7 +146,6 @@
     background-color: transparent;
     width: 100%;
     padding: 14px 15px 14px 15px;
-    // margin-right: 12px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
