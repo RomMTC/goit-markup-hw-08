@@ -4,6 +4,7 @@
 }
 .page-header__container {
     @extend %container;
+    position: relative;
     display: flex;
     align-items: center;
     padding-top: 10px;
