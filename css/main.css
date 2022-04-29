@@ -937,8 +937,7 @@ img {
 .modal-form-btn {
   display: block;
   justify-content: center;
-  align-items: center;
-  margin-left: 124px;
+  margin: auto;
   width: 200px;
   height: 50px;
   font-weight: 700;
