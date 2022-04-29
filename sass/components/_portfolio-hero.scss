@@ -19,7 +19,7 @@
     line-height: 1.62;
     text-align: center;
     background-color: #f5f4fa;
-    color: var(--secondary-text-color);
+    color: $secondaryTextColor;
     cursor: pointer;
     border: none;
     border-radius: 4px;
@@ -48,10 +48,6 @@
     justify-content: center;
     margin-bottom: 30px;
     }
-    
-    @media screen and (min-width: 1200px) {
-    margin-bottom: 50px;
-    }
   }
   .portfolio-item {
     margin-right: 8px;
@@ -68,7 +64,7 @@
 
     display: flex;
     flex-wrap: wrap;
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 768px) {
     margin: -15px;
     }
   }
