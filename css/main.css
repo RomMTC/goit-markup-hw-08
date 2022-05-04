@@ -1116,9 +1116,15 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: left;
+  text-align: center;
   color: #212121;
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-quality-title {
+    text-align: left;
+  }
 }
 
 .main-quality-descr {
@@ -1718,6 +1724,13 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .portfolio-list {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+
 .portfolio-item {
   margin-right: 8px;
 }
@@ -1756,12 +1769,13 @@ img {
 @media screen and (min-width: 320px) {
   .portfolio-projects-item {
     width: 100%;
-    margin: 15px;
+    margin: auto;
   }
 }
 
 @media screen and (min-width: 768px) {
   .portfolio-projects-item {
+    margin: 15px;
     width: calc((100% / 2 - 2 * 15px));
   }
 }

@@ -50,9 +50,12 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
     color: $secondaryTextColor;
      margin-bottom: 10px;
+     @media screen  and (min-width: 768px) {
+      text-align: left;
+     }
   }
   .main-quality-descr {
     font-weight: 400;
