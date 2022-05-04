@@ -79,9 +79,9 @@
     margin-bottom: 30px;
     cursor: pointer;
     transition: box-shadow $primaryAnimation;
-    @media screen and (min-width: 320px) {
-      width: 100%;
-      margin: auto;
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+    width: 100%;
+    margin: 0 auto 30px auto;
     }
     @media screen and (min-width: 768px) {
     margin: 15px;
@@ -90,6 +90,11 @@
     @media screen and (min-width: 1200px) {
     width: calc((100% / 3 - 2 * 15px));
     }
+  }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+.portfolio-projects-item:last-child {
+  margin-bottom: 0;
+}
   }
   .portfolio-projects-item:hover,
   .portfolio-projects-item:focus {
